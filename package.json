@@ -1,0 +1,17 @@
+{
+  "name": "standbyMode",
+  "version": "0.1.0",
+  "description": "",
+  "cordova": {
+    "id": "true",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Bogdan",
+  "license": "ISC"
+}

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-standby-mode" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-standby-mode</name>
+    <js-module name="cordova-plugin-standby-mode" src="www/cordova-plugin-standby-mode.js">
+        <clobbers target="window.plugins.standbyMode" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Standby">
+                <param name="ios-package" value="Standby" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/Standby.h" />
+        <source-file src="src/ios/Standby.m" />
+    </platform>
+
+</plugin>
